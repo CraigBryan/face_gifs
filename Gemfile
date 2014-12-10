@@ -40,6 +40,9 @@ gem 'spring',        group: :development
 # Paperclip for file uploads
 gem 'paperclip', '~> 4.2'
 
+# Devise for user authentication and sessions
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
