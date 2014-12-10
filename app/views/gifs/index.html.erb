@@ -1,0 +1,11 @@
+<div>
+  <% if @gifs.nil? || @gifs.size == 0 %>
+    <p>Nothing to show. Upload some sweet gifs.</p>
+  <% else %>
+    <% @gifs.each do |gif| %>
+      <p><%= gif.title %></p>
+      <%= image_tag gif.image.url %>
+      <p><%= gif.caption %></p>
+    <% end %>
+  <% end %>
+</div>

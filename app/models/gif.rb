@@ -1,4 +1,7 @@
 class Gif < ActiveRecord::Base
-  attr_accessible :gif_image
-  has_attached_file :image, :default_url => "/images/missing.gif" 
+  belongs_to :user
+
+  has_attached_file :image 
+  #validates_attachment_content_type :image, :content_type => /.*\.gif/
+  do_not_validate_attachment_file_type :image
 end

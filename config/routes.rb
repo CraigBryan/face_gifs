@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resource :gifs
+  resources :gifs
 
   devise_scope :user do
     root to: "devise/sessions#new"

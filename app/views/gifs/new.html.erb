@@ -1,0 +1,13 @@
+<%= form_for @gif, :html => {:multipart => true} do |gif_form| %>
+
+  <%= gif_form.label :title %>
+  <%= gif_form.text_field :title %>
+
+  <%= gif_form.label :caption %>
+  <%= gif_form.text_field :caption %>
+
+  <%= gif_form.label :gif_file %>
+  <%= gif_form.file_field :image %>
+
+  <%= gif_form.submit "Add Gif" %>
+<% end %>
